@@ -44,23 +44,8 @@ Este projeto consiste em uma página web interativa onde o usuário pode gerar u
 
 ## Captura de Tela
 
-![Exemplo de Interface](img/solicita-info.png)
-![Exemplo de Interface](img/tela-inicial.pngg)
-![Exemplo de Interface](img/numero-correto.png)
-![Exemplo de Interface](img/numero-errado.png)
+![](img/solicita-info.png)
+![](img/tela-inicial.pngg)
+![](img/numero-correto.png)
+![](img/numero-errado.png)
 
-## Código
-
-Aqui está um exemplo do código JavaScript utilizado no projeto:
-
-```javascript
-function sortearNumero(min, max) {
-    return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-document.getElementById('botaoSorteio').addEventListener('click', function() {
-    let min = parseInt(document.getElementById('inputMin').value);
-    let max = parseInt(document.getElementById('inputMax').value);
-    let resultado = sortearNumero(min, max);
-    document.getElementById('resultado').textContent = `Número sorteado: ${resultado}`;
-});
